@@ -4,10 +4,10 @@ import 'package:rick_and_morty_guide/src/core/theme/rmg_colors.dart';
 import 'package:rick_and_morty_guide/src/core/theme/rmg_colors_light.dart';
 import 'package:rick_and_morty_guide/src/core/utils/extensions/numbers_extension.dart';
 import 'package:rick_and_morty_guide/src/modules/home/domain/enum/enum_list_state.dart';
-import 'package:rick_and_morty_guide/src/modules/home/presentation/page/widgets/filters_widet.dart';
+import 'package:rick_and_morty_guide/src/modules/home/presentation/widgets/filters_widet.dart';
 
-import '../../../../../app_provider.dart';
-import '../../controller/home_controller.dart';
+import '../../../../app_provider.dart';
+import '../controller/home_controller.dart';
 import 'card_widget.dart';
 import 'chip_widget.dart';
 
@@ -48,7 +48,7 @@ class _CharactersWidgetState extends State<CharactersWidget>
                 controller: scrollController,
                 itemCount: controller.characters.length,
                 itemBuilder: (BuildContext context, int index) {
-                  return CardWidget(index: index);
+                  return CardWidget(char: controller.characters[index]);
                 },
               ),
             ),

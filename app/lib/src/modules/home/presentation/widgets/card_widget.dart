@@ -7,17 +7,17 @@ import 'package:rick_and_morty_guide/src/core/theme/rmg_colors_light.dart';
 import 'package:rick_and_morty_guide/src/core/utils/extensions/numbers_extension.dart';
 import 'package:rick_and_morty_guide/src/modules/home/presentation/controller/home_controller.dart';
 
-import '../../../../../app_provider.dart';
-import '../../../../../core/theme/rmg_gradients.dart';
-import '../../../../../core/theme/rmg_icons.dart';
-import '../../../../../core/theme/rmg_images.dart';
-import '../../../../../core/theme/store/theme_store.dart';
+import '../../../../app_provider.dart';
+import '../../../../core/theme/rmg_gradients.dart';
+import '../../../../core/theme/rmg_icons.dart';
+import '../../../../core/theme/rmg_images.dart';
+import '../../../../core/theme/store/theme_store.dart';
 
 class CardWidget extends StatelessWidget {
-  final int index;
+  final Character char;
   CardWidget({
     super.key,
-    required this.index,
+    required this.char,
   });
 
   final themeStore = getIt<ThemeStore>();
@@ -31,10 +31,10 @@ class CardWidget extends StatelessWidget {
 
     return InkWell(
       onTap: () => Navigator.of(context)
-          .pushNamed('/detail', arguments: controller.characters[index]),
+          .pushNamed('/detail', arguments: char),
       child: Container(
         alignment: Alignment.center,
-        margin:  EdgeInsets.symmetric(vertical: 10.scale, horizontal: 30.scale),
+        margin: EdgeInsets.symmetric(vertical: 10.scale, horizontal: 30.scale),
         decoration: const BoxDecoration(
           boxShadow: [
             BoxShadow(
@@ -69,7 +69,7 @@ class CardWidget extends StatelessWidget {
                             : Colors.white.withOpacity(0.05)),
                   ),
                   child: Padding(
-                    padding:  EdgeInsets.all(10.0.scale),
+                    padding: EdgeInsets.all(10.0.scale),
                     child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -88,9 +88,10 @@ class CardWidget extends StatelessWidget {
                                         CrossAxisAlignment.start,
                                     children: [
                                       SizedBox(
-                                        width: ((size.width * 0.85) * 0.45).scale,
+                                        width:
+                                            ((size.width * 0.85) * 0.45).scale,
                                         child: Text(
-                                          controller.characters[index].name,
+                                          char.name,
                                           style: theme.textTheme.subtitle1,
                                         ),
                                       ),
@@ -109,12 +110,11 @@ class CardWidget extends StatelessWidget {
                                               color: Colors.green,
                                             ),
                                           ),
-                                           SizedBox(
+                                          SizedBox(
                                             width: 7.scale,
                                           ),
                                           Text(
-                                              controller
-                                                  .characters[index].status,
+                                              char.status,
                                               style: theme.textTheme.caption),
                                         ],
                                       ),
@@ -125,13 +125,12 @@ class CardWidget extends StatelessWidget {
                                     right: 0,
                                     bottom: 0,
                                     child: Text(
-                                      controller.characters[index].type,
+                                      char.type,
                                       style: theme.textTheme.headline4!
                                           .copyWith(
                                               color: theme.colorScheme.onSurface
                                                   .withOpacity(0.15),
-                                              fontSize: controller
-                                                          .characters[index]
+                                              fontSize: char
                                                           .type
                                                           .length >
                                                       10
@@ -145,11 +144,10 @@ class CardWidget extends StatelessWidget {
                                     child: IconButton(
                                         onPressed: () {
                                           controller.handleTapFavorite(
-                                              controller.characters[index].id);
+                                              char.id);
                                         },
                                         icon: Icon(
-                                          controller
-                                                  .characters[index].isFavorite
+                                          char.isFavorite
                                               ? RMGIcons.favoriteFill
                                               : RMGIcons.favorite,
                                           color: RMGColorsLight().secundary,
@@ -170,7 +168,7 @@ class CardWidget extends StatelessWidget {
                         topLeft: Radius.circular(5),
                         bottomLeft: Radius.circular(5)),
                     child: Image.network(
-                      controller.characters[index].image,
+                      char.image,
                       width: (size.width * 0.85) * 0.35,
                       fit: BoxFit.cover,
                       // fit: BoxFit.fill,

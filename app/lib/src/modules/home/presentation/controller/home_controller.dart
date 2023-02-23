@@ -43,8 +43,8 @@ abstract class _HomeControllerBase with Store {
   @action
   handleTapFavorite(int id) {
     int index = _characters.indexWhere((element) => element.id == id);
-    _characters[index].isFavorite = !_characters[index].isFavorite;
-    _characters = _characters;
+    _characters[index] = _characters[index].copyWith(isFavorite: !_characters[index].isFavorite);
+    
   }
 
   @action
@@ -85,8 +85,8 @@ abstract class _HomeControllerBase with Store {
   }
 
   @computed
-  List<Character> get favoriteCharacters =>
-      characters.where((char) => char.isFavorite).toList();
+  List<Character> get favoriteCharacters => characters.isNotEmpty?
+      characters.where((char) => char.isFavorite).toList():[];
 
   @computed
   List<Character> get characters {
@@ -122,14 +122,6 @@ abstract class _HomeControllerBase with Store {
     return charsFiltered;
   }
 
-  // List<Character> applyFilters(List<Character> chars) {}
-
-  // return chars;
-  // if(filters['monster']!)
-  //   chars =  chars.removeWhere((char) => char.type=='monster');
-  // if(filters['monster']!)
-  //   chars =  chars.removeWhere((char) => char.type=='monster');
-  // }
   @action
   Future<void> pipeline() async {
     if (!controllerState.isLoading) {

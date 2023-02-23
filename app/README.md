@@ -14,3 +14,12 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+## Next Steps
+
+- Add search on remote
+- Fix broken remote images
+- persist favorites
+- cache list
+- Share char
+- refact dependency inject

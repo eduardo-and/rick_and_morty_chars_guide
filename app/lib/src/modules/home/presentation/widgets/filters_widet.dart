@@ -4,9 +4,9 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:rick_and_morty_guide/src/core/utils/extensions/numbers_extension.dart';
 import 'package:rick_and_morty_guide/src/modules/home/presentation/controller/home_controller.dart';
-import 'package:rick_and_morty_guide/src/modules/home/presentation/page/widgets/chip_widget.dart';
+import 'package:rick_and_morty_guide/src/modules/home/presentation/widgets/chip_widget.dart';
 
-import '../../../../../app_provider.dart';
+import '../../../../app_provider.dart';
 
 class FiltersWidget extends StatelessWidget {
   final bool purple ;

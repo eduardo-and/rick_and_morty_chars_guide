@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:rick_and_morty_guide/src/modules/home/presentation/page/widgets/filters_widet.dart';
+import 'package:rick_and_morty_guide/src/modules/home/presentation/widgets/filters_widet.dart';
 
-import '../../../../../app_provider.dart';
-import '../../controller/home_controller.dart';
+import '../../../../app_provider.dart';
+import '../controller/home_controller.dart';
 import 'card_widget.dart';
 
 class FavoritesWidget extends StatefulWidget {
@@ -38,7 +38,7 @@ class _FavoritesWidgetState extends State<FavoritesWidget>
               child: ListView.builder(
                 itemCount: controller.favoriteCharacters.length,
                 itemBuilder: (BuildContext context, int index) {
-                  return CardWidget(index: index);
+                  return CardWidget(char: controller.favoriteCharacters[index]);
                 },
               ),
             )

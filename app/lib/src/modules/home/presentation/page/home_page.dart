@@ -5,9 +5,9 @@ import 'package:rick_and_morty_guide/src/app_provider.dart';
 import 'package:rick_and_morty_guide/src/core/theme/rmg_gradients.dart';
 import 'package:rick_and_morty_guide/src/core/utils/extensions/numbers_extension.dart';
 import 'package:rick_and_morty_guide/src/modules/home/domain/enum/enum_state.dart';
-import 'package:rick_and_morty_guide/src/modules/home/presentation/page/widgets/app_bar_widget.dart';
-import 'package:rick_and_morty_guide/src/modules/home/presentation/page/widgets/characters_widget.dart';
-import 'package:rick_and_morty_guide/src/modules/home/presentation/page/widgets/favorites_widget.dart';
+import 'package:rick_and_morty_guide/src/modules/home/presentation/widgets/app_bar_widget.dart';
+import 'package:rick_and_morty_guide/src/modules/home/presentation/widgets/characters_widget.dart';
+import 'package:rick_and_morty_guide/src/modules/home/presentation/widgets/favorites_widget.dart';
 
 import '../../../../core/theme/store/theme_store.dart';
 import '../../../../core/widgets/error_modal.dart';

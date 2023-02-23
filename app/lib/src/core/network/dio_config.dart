@@ -1,12 +1,15 @@
+import 'package:flutter/material.dart';
 
 import '../utils/consts.dart';
 import 'package:dio/dio.dart';
 
 class DioConfig {
-  final Dio _dio;
-  DioConfig({required Dio dio}) : _dio = dio;
+  DioConfig() {
+    init();
+  }
+  final Dio _dio = Dio();
 
-  get dio => _dio;
+  Dio get dio => _dio;
 
   void init() {
     _dio.options.baseUrl = Constants.apiUrl;

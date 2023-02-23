@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:rick_and_morty_guide/src/core/utils/extensions/numbers_extension.dart';
 
-import '../../../../../core/theme/rmg_colors_light.dart';
+import '../../../../core/theme/rmg_colors_light.dart';
 
 class ChipWidget extends StatelessWidget {
   final bool isSelected;
