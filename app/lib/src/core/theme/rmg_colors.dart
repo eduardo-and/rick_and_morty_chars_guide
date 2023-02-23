@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'i_rmg_colors.dart';
 import 'rmg_colors_dark.dart';
 import 'rmg_colors_light.dart';
-import 'i_rmg_colors.dart';
 
 class RMGColors {
   RMGColors._();

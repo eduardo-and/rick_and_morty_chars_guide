@@ -1,8 +1,8 @@
 import 'package:dartz/dartz.dart';
-import 'package:rick_and_morty_guide/src/app_provider.dart';
-import 'package:rick_and_morty_guide/src/core/data/model/person_model.dart';
-import 'package:rick_and_morty_guide/src/core/domain/entities/character_entity.dart';
-import 'package:rick_and_morty_guide/src/modules/home/data/datasources/characters_data_source.dart';
+import '../../../app_provider.dart';
+import '../../../core/data/model/person_model.dart';
+import '../../../core/domain/entities/character_entity.dart';
+import 'datasources/characters_data_source.dart';
 
 import '../domain/repositories/i_characters_repository.dart';
 import 'datasources/i_characters_data_source.dart';

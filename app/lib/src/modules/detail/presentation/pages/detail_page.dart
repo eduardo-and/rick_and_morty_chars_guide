@@ -1,14 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:rick_and_morty_guide/src/core/utils/extensions/numbers_extension.dart';
-import 'package:rick_and_morty_guide/src/modules/home/presentation/controller/home_controller.dart';
 
 import '../../../../app_provider.dart';
 import '../../../../core/domain/entities/character_entity.dart';
 import '../../../../core/theme/rmg_colors_light.dart';
 import '../../../../core/theme/rmg_icons.dart';
 import '../../../../core/theme/store/theme_store.dart';
+import '../../../../core/utils/extensions/numbers_extension.dart';
+import '../../../home/presentation/controller/home_controller.dart';
 
 class CharDetailPage extends StatefulWidget {
   Character char;

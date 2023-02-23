@@ -1,7 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:rick_and_morty_guide/src/core/theme/rmg_colors_dark.dart';
-import 'package:rick_and_morty_guide/src/core/theme/rmg_colors_light.dart';
+
+import 'rmg_colors_dark.dart';
+import 'rmg_colors_light.dart';
 
 class RMGGradients {
   static LinearGradient lightGreenSplashBackground = LinearGradient(

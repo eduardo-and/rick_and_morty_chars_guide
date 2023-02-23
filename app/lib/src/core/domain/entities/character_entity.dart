@@ -1,4 +1,4 @@
-import 'package:rick_and_morty_guide/src/core/domain/enums/page_state_enum.dart';
+import '../enums/page_state_enum.dart';
 
 class Character {
   final int id;

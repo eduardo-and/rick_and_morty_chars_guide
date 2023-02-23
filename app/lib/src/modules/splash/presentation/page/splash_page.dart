@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:rick_and_morty_guide/src/app_provider.dart';
-import 'package:rick_and_morty_guide/src/core/theme/rmg_gradients.dart';
-import 'package:rick_and_morty_guide/src/core/theme/rmg_images.dart';
-import 'package:rick_and_morty_guide/src/core/utils/extensions/numbers_extension.dart';
+import '../../../../app_provider.dart';
+import '../../../../core/theme/rmg_gradients.dart';
+import '../../../../core/theme/rmg_images.dart';
+import '../../../../core/utils/extensions/numbers_extension.dart';
 
 import '../../../../core/theme/store/theme_store.dart';
 

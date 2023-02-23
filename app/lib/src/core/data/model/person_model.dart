@@ -1,4 +1,5 @@
 import 'dart:convert';
+
 import '../../domain/entities/character_entity.dart';
 import '../../domain/enums/page_state_enum.dart';
 

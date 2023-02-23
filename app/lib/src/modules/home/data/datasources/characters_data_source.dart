@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
-import 'package:rick_and_morty_guide/src/app_provider.dart';
-import 'package:rick_and_morty_guide/src/core/utils/consts.dart';
-import 'package:rick_and_morty_guide/src/modules/home/presentation/controller/home_controller.dart';
+import '../../../../app_provider.dart';
+import '../../../../core/utils/consts.dart';
+import '../../presentation/controller/home_controller.dart';
 
 import '../../../../core/data/model/person_model.dart';
 import 'i_characters_data_source.dart';

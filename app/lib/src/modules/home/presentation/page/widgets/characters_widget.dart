@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:rick_and_morty_guide/src/core/theme/rmg_colors.dart';
-import 'package:rick_and_morty_guide/src/core/theme/rmg_colors_light.dart';
-import 'package:rick_and_morty_guide/src/core/utils/extensions/numbers_extension.dart';
-import 'package:rick_and_morty_guide/src/modules/home/domain/enum/enum_list_state.dart';
-import 'package:rick_and_morty_guide/src/modules/home/presentation/widgets/filters_widet.dart';
+import '../../../../../app_provider.dart';
+import '../../../../../core/theme/rmg_colors.dart';
+import '../../../../../core/theme/rmg_colors_light.dart';
+import '../../../../../core/utils/extensions/numbers_extension.dart';
+import '../../../domain/enum/enum_list_state.dart';
+import '../../controller/home_controller.dart';
+import '../../widgets/filters_widet.dart';
 
-import '../../../../app_provider.dart';
-import '../controller/home_controller.dart';
 import 'card_widget.dart';
 import 'chip_widget.dart';
 

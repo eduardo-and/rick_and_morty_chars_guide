@@ -3,10 +3,10 @@ import 'dart:ffi';
 import 'package:flutter/cupertino.dart';
 import 'package:mobx/mobx.dart';
 
-import 'package:rick_and_morty_guide/src/core/domain/entities/character_entity.dart';
-import 'package:rick_and_morty_guide/src/modules/home/domain/enum/enum_list_state.dart';
-import 'package:rick_and_morty_guide/src/modules/home/domain/enum/enum_state.dart';
-import 'package:rick_and_morty_guide/src/modules/home/domain/usecases/get_characters_usecase.dart';
+import '../../../../core/domain/entities/character_entity.dart';
+import '../../domain/enum/enum_list_state.dart';
+import '../../domain/enum/enum_state.dart';
+import '../../domain/usecases/get_characters_usecase.dart';
 
 import '../../../../app_provider.dart';
 import '../../../../core/domain/entities/filter_entity.dart';

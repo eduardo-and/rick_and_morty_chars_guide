@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:rick_and_morty_guide/src/app_provider.dart';
-import 'package:rick_and_morty_guide/src/core/domain/entities/character_entity.dart';
-import 'package:rick_and_morty_guide/src/core/theme/rmg_themes.dart';
-import 'package:rick_and_morty_guide/src/modules/home/presentation/page/home_page.dart';
+import 'app_provider.dart';
+import 'core/domain/entities/character_entity.dart';
+import 'core/theme/rmg_themes.dart';
+import 'modules/home/presentation/page/home_page.dart';
 
 import 'core/theme/store/theme_store.dart';
 import 'modules/detail/presentation/pages/detail_page.dart';

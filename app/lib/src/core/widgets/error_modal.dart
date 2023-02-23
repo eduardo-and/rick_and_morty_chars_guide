@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:rick_and_morty_guide/src/core/theme/rmg_colors.dart';
-import 'package:rick_and_morty_guide/src/core/theme/rmg_images.dart';
+import '../theme/rmg_colors.dart';
+import '../theme/rmg_images.dart';
 
 class ErrorModal {
   void show(BuildContext context, Function onPressed) {

@@ -5,7 +5,6 @@ import '../utils/extensions/numbers_extension.dart';
 import 'rmg_colors_dark.dart';
 import 'rmg_colors_light.dart';
 import 'rmg_fonts.dart';
-import 'rmg_icons.dart';
 
 abstract class RMGThemes {
   static ThemeData get dark {

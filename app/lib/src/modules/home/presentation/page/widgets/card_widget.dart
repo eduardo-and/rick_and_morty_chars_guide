@@ -2,16 +2,16 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:rick_and_morty_guide/src/core/domain/entities/character_entity.dart';
-import 'package:rick_and_morty_guide/src/core/theme/rmg_colors_light.dart';
-import 'package:rick_and_morty_guide/src/core/utils/extensions/numbers_extension.dart';
-import 'package:rick_and_morty_guide/src/modules/home/presentation/controller/home_controller.dart';
+import '../../../../../app_provider.dart';
+import '../../../../../core/domain/entities/character_entity.dart';
+import '../../../../../core/theme/rmg_colors_light.dart';
+import '../../../../../core/theme/rmg_gradients.dart';
+import '../../../../../core/theme/rmg_icons.dart';
+import '../../../../../core/theme/rmg_images.dart';
+import '../../../../../core/theme/store/theme_store.dart';
+import '../../../../../core/utils/extensions/numbers_extension.dart';
+import '../../controller/home_controller.dart';
 
-import '../../../../app_provider.dart';
-import '../../../../core/theme/rmg_gradients.dart';
-import '../../../../core/theme/rmg_icons.dart';
-import '../../../../core/theme/rmg_images.dart';
-import '../../../../core/theme/store/theme_store.dart';
 
 class CardWidget extends StatelessWidget {
   final Character char;

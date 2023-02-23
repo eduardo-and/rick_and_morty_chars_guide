@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:rick_and_morty_guide/src/app_provider.dart';
-import 'package:rick_and_morty_guide/src/core/theme/rmg_colors_light.dart';
-import 'package:rick_and_morty_guide/src/core/utils/extensions/numbers_extension.dart';
-import 'package:rick_and_morty_guide/src/modules/home/presentation/controller/home_controller.dart';
+import '../../../../../app_provider.dart';
+import '../../../../../core/theme/rmg_colors_light.dart';
+import '../../../../../core/utils/extensions/numbers_extension.dart';
+import '../../controller/home_controller.dart';
 
-import '../../../../core/theme/rmg_fonts.dart';
-import '../../../../core/theme/rmg_icons.dart';
-import '../../../../core/theme/store/theme_store.dart';
+import '../../../../../core/theme/rmg_fonts.dart';
+import '../../../../../core/theme/rmg_icons.dart';
+import '../../../../../core/theme/store/theme_store.dart';
 
 class CustomAppBar extends StatefulWidget implements PreferredSizeWidget {
   final double height;
