@@ -5,7 +5,7 @@
 
 ### Descrição
 
-O objetivo do projeto é aprimorar as habilidades em prototipagem e desenvolvimento mobile, utilizando Flutter e as linguagens nativas. Nesse contexto, a implementação do projeto também será realizada em Kotlin quanto em Swift. Quanto aos dados, foram obtidos através da API **[https://randomuser.me/api](https://rickandmortyapi.com/)**.
+O objetivo do projeto é aprimorar as habilidades em prototipagem e desenvolvimento mobile, utilizando Flutter e as linguagens nativas. Nesse contexto, a implementação do projeto também será realizada em Kotlin e Swift. Quanto aos dados, foram obtidos através da API **[https://randomuser.me/api](https://rickandmortyapi.com/)**.
 
 ## Implementação
 ### Design System
