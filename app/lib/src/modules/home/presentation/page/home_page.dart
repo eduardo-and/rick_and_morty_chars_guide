@@ -5,12 +5,13 @@ import '../../../../app_provider.dart';
 import '../../../../core/theme/rmg_gradients.dart';
 import '../../../../core/utils/extensions/numbers_extension.dart';
 import '../../domain/enum/enum_state.dart';
-import '../widgets/app_bar_widget.dart';
+
 
 import '../../../../core/theme/store/theme_store.dart';
 import '../../../../core/widgets/error_modal.dart';
 import '../../home_provider.dart';
 import '../controller/home_controller.dart';
+import 'widgets/app_bar_widget.dart';
 import 'widgets/characters_widget.dart';
 import 'widgets/favorites_widget.dart';
 

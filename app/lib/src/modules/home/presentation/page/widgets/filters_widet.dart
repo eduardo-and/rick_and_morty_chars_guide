@@ -3,7 +3,7 @@ import 'package:flutter_mobx/flutter_mobx.dart';
 import '../../../../../app_provider.dart';
 import '../../../../../core/utils/extensions/numbers_extension.dart';
 import '../../controller/home_controller.dart';
-import '../../widgets/chip_widget.dart';
+import 'chip_widget.dart';
 
 
 class FiltersWidget extends StatelessWidget {

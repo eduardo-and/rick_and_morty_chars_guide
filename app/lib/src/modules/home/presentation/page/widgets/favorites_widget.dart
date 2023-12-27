@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import '../../../../../app_provider.dart';
 import '../../controller/home_controller.dart';
-import '../../widgets/filters_widet.dart';
 
 import 'card_widget.dart';
+import 'filters_widet.dart';
 
 class FavoritesWidget extends StatefulWidget {
   const FavoritesWidget({super.key});

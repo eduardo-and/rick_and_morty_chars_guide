@@ -6,10 +6,10 @@ import '../../../../../core/theme/rmg_colors_light.dart';
 import '../../../../../core/utils/extensions/numbers_extension.dart';
 import '../../../domain/enum/enum_list_state.dart';
 import '../../controller/home_controller.dart';
-import '../../widgets/filters_widet.dart';
 
 import 'card_widget.dart';
 import 'chip_widget.dart';
+import 'filters_widet.dart';
 
 class CharactersWidget extends StatefulWidget {
   const CharactersWidget({super.key});
