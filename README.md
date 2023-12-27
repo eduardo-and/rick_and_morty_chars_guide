@@ -1,7 +1,7 @@
 # Rick and Morty Chars Guide
 ## Apk
-
-[![Download apk](https://upload.wikimedia.org/wikipedia/commons/1/11/Download_apk.png?20180424184350)](https://codecademy.com)
+<a href="https://github.com/eduardo-and/rick_and_morty_chars_guide/raw/master/apk/rick-and-morty-chars-guide.apk">
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Download_apk.png?20180424184350" alt="drawing" width="250"/></a>
 
 ### Descrição
 
